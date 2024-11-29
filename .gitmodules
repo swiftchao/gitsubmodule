@@ -2,8 +2,8 @@
 	path = sc/git@github.com:swiftchao/glog.git
 	url = git@github.com:swiftchao/glog.git
 [submodule "sc/glog"]
-	path = sc/glog
+	path = src/glog
 	url = git@github.com:swiftchao/glog.git
 [submodule "sc/googletest"]
-	path = sc/googletest
+	path = src/googletest
 	url = git@github.com:swiftchao/googletest.git
