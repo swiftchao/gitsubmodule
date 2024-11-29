@@ -1,0 +1,9 @@
+[submodule "sc/git@github.com:swiftchao/glog.git"]
+	path = sc/git@github.com:swiftchao/glog.git
+	url = git@github.com:swiftchao/glog.git
+[submodule "sc/glog"]
+	path = sc/glog
+	url = git@github.com:swiftchao/glog.git
+[submodule "sc/googletest"]
+	path = sc/googletest
+	url = git@github.com:swiftchao/googletest.git
