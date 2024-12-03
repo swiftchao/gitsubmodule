@@ -3,5 +3,7 @@ project(cmakehello CXX)
 set(VERSION 1.0.0)
 add_subdirectory(src/glog)
 add_subdirectory(src/googletest)
+add_subdirectory(src/lib)
 add_subdirectory(src/main)
-
+#include_directories(${CMAKE_SOURCE_DIR}/src/include)
+include_directories(${PROJECT_SOURCE_DIR}/src/include)

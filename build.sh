@@ -18,3 +18,5 @@ cd ../
 ldd ./build/src/main/gloghello
 ./build/src/main/gloghello 100
 ls -al /tmp/logs/
+ldd ./build/src/main/gtesthello
+./build/src/main/gtesthello
