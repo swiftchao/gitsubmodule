@@ -7,3 +7,18 @@
 [submodule "sc/googletest"]
 	path = src/googletest
 	url = git@github.com:swiftchao/googletest.git
+[submodule "src/rapidjson"]
+	path = src/rapidjson
+	url = git@github.com:swiftchao/rapidjson.git
+[submodule "src/rocksdb"]
+	path = src/rocksdb
+	url = git@github.com:swiftchao/rocksdb.git
+[submodule "src/leveldb"]
+	path = src/leveldb
+	url = git@github.com:swiftchao/leveldb.git
+[submodule "src/zstd"]
+	path = src/zstd
+	url = git@github.com:swiftchao/zstd.git
+[submodule "src/xxHash"]
+	path = src/xxHash
+	url = git@github.com:swiftchao/xxHash.git
