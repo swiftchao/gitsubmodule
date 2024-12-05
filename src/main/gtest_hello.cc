@@ -7,8 +7,8 @@
 
 // test_math.cc
 #include "gtest/gtest.h"
-#include "include/math.h"
-//#include "math.h"
+//#include "include/math.h"
+#include "math.h"
 
 // 测试用例：测试add函数是否能正确相加两个整数
 TEST(AdditionTest, BasicAddition) 

@@ -10,7 +10,3 @@ add_subdirectory(src/rapidjson)
 #add_subdirectory(src/xxHash)
 add_subdirectory(src/lib)
 add_subdirectory(src/main)
-#include_directories(${CMAKE_SOURCE_DIR}/src/include)
-include_directories(${PROJECT_SOURCE_DIR}/src/include)
-# 将src/rapidjson/include目录添加到头文件搜索路径，方便找到RapidJSON的头文件
-#include_directories(${CMAKE_SOURCE_DIR}/src/rapidjson/include)
