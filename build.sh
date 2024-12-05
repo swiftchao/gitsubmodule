@@ -15,8 +15,16 @@ cd build
 cmake ../
 cmake --build .
 cd ../
+
+#gloghello
 ldd ./build/src/main/gloghello
 ./build/src/main/gloghello 100
-ls -al /tmp/logs/
+#ls -al /tmp/logs/
+
+#gtesthello
 ldd ./build/src/main/gtesthello
 ./build/src/main/gtesthello
+
+#rapidjsonhello
+ldd ./build/src/main/rapidjsonhello
+./build/src/main/rapidjsonhello
