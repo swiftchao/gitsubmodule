@@ -22,3 +22,6 @@
 [submodule "src/xxHash"]
 	path = src/xxHash
 	url = git@github.com:swiftchao/xxHash.git
+[submodule "src/boost"]
+	path = src/boost
+	url = git@github.com:swiftchao/boost

@@ -16,7 +16,7 @@ add_subdirectory(src/rapidjson)
 #add_subdirectory(src/rocksdb)
 #add_subdirectory(src/leveldb)
 #add_subdirectory(src/zstd)
-add_subdirectory(src/boost)
+#add_subdirectory(src/boost)
 #add_subdirectory(src/xxHash)
 add_subdirectory(src/lib)
 add_subdirectory(src/main)
@@ -66,13 +66,15 @@ if(WITH_SYSTEM_BOOST)
   if(BOOST_ROOT AND CMAKE_LIBRARY_ARCHITECTURE)
     set(BOOST_LIBRARYDIR "${BOOST_ROOT}/lib/${CMAKE_LIBRARY_ARCHITECTURE}")
   endif()
-  find_package(Boost 1.72 COMPONENTS ${BOOST_COMPONENTS} REQUIRED)
+  #find_package(Boost 1.72 COMPONENTS ${BOOST_COMPONENTS} REQUIRED)
+  find_package(Boost COMPONENTS ${BOOST_COMPONENTS} REQUIRED)
 else()
   set(BOOST_J 1 CACHE STRING
     "max jobs for Boost build") # override w/-DBOOST_J=<n>
   set(Boost_USE_STATIC_LIBS ON)
   include(BuildBoost)
-  build_boost(1.72
+  #build_boost(1.72
+  build_boost(
     COMPONENTS ${BOOST_COMPONENTS} ${BOOST_HEADER_COMPONENTS})
 endif()
 include_directories(BEFORE SYSTEM ${Boost_INCLUDE_DIRS})

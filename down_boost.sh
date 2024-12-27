@@ -25,6 +25,7 @@ download_boost() {
         fi
     done
     set -e
+    rm -rf src/boost
     tar xjf $boost_fname -C src \
         --exclude="$boost_version_underscore/libs/*/doc" \
         --exclude="$boost_version_underscore/libs/*/example" \
