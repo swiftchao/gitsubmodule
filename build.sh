@@ -13,8 +13,11 @@ fi
 mkdir build
 cd build
 cmake ../
-cmake --build .
+#cmake --build . -D BoostRoot=src/boost
+#cmake -D BoostRoot=src/boost --build .
+make
 cd ../
+
 
 #gloghello
 ldd ./build/src/main/gloghello
@@ -28,3 +31,7 @@ ldd ./build/src/main/gtesthello
 #rapidjsonhello
 ldd ./build/src/main/rapidjsonhello
 ./build/src/main/rapidjsonhello
+
+#boosthello
+ldd ./build/src/main/boosthello
+./build/src/main/boosthello
